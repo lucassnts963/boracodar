@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div id="view" class="big">
+            <div class="info">
+                <img src="./assets/album.jpg" alt="Alguma coisa extranhamente bonita">
+                <div class="descriptions">
+                    <h1>Acorda Devinho</h1>
+                    <p>Banda Rocketseat</p>
+                </div>
+            </div>
+            <div class="controller">
+                <ion-icon name="play-back"></ion-icon>
+                <ion-icon name="play"></ion-icon>
+                <ion-icon name="play-forward"></ion-icon>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="tracker"></div>
+                </div>
+                <div class="time">
+                    <span>03:20</span>
+                    <span>00:20</span>
+                </div>
+            </div>
+        </div>
+        <div class="configurations">
+            <button onclick="small()">Pequeno</button>
+            <button onclick="medium()">Médio</button>
+            <button onclick="big()">Grande</button>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
